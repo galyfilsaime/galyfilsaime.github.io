@@ -1,4 +1,5 @@
-# galyfilsaime.github.io
-CUNY_SE-Boot-Camp
+# CUNY_SE-Boot-Camp
+
 SOFTWARE ENGINEERING MICRO-CREDENTIAL CAREER TRACK IN WEB DEVELOPMENT
+
 Assignment Solutions
