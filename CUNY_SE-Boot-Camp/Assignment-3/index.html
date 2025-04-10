@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 3 - Coffee Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Dropdown Menu Section -->
+        <nav class="menu">
+            <select id="menu-select" onchange="scrollToSection()">
+                <option value="">Select an Item</option>
+                <option value="coffee-block">Coffee</option>
+                <option value="tea-block">Tea</option>
+                <option value="snack-block">Snack</option>
+                <option value="sandwich-block">Sandwich</option>
+            </select>
+        </nav>
+
+        <!-- Main Content Section -->
+        <main>
+            <!-- First Row: Coffee Block (Image) and Tea Block (Text) -->
+            <section id="coffee-block" class="content-block image-block" style="background-image: url('skyline.jpg');">
+            </section>
+
+            <section id="tea-block" class="content-block">
+                <h4>Coffee Block</h4>
+                <p>The width of each image/text block is 30%</p>
+                <p>The width of the menu is about 25%</p>
+            </section>
+
+            <!-- Second Row: City Street Block (Image) and Snack Block (Text) -->
+            <section id="snack-block" class="content-block">
+                <h4>Snack Block</h4>
+                <p>Replace img element with h4 and p</p>
+            </section>
+
+            <section id="sandwich-block" class="content-block image-block" style="background-image: url('city-taxi.jpg');">
+            </section>
+
+            
+        </main>
+    </div>
+
+    <!-- JavaScript for Dropdown Redirection -->
+    <script>
+        function scrollToSection() {
+            const select = document.getElementById("menu-select");
+            const sectionId = select.value;
+            if (sectionId) {
+                const section = document.getElementById(sectionId);
+                if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                }
+            }
+        }
+    </script>
+</body>
+</html>
