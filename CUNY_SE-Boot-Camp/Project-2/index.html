@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Josefina Body Care</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <div class="title">
+            <h1>Josefina Body Care</h1>
+            <h2>Discover the Exotic Sensation</h2>
+        </div>
+    </div>
+
+    <!-- Slideshow -->
+    <div class="slideshow">
+        <div class="slide">
+            <img src="images/intro_img1.jpg" alt="Slide 1">
+            <div class="slide-text">
+                <h2>Josefina Body Care</h2>
+                <p>Indulge in Luxury</p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="images/intro_img2.jpg" alt="Slide 2">
+            <div class="slide-text">
+                <h2>Exotic Sensations</h2>
+                <p>Nourish Your Skin Naturally</p>
+            </div>
+        </div>
+        <div class="slide text-slide">
+            <p><strong>Strengthen Your Skin</strong><br>
+            Special technology makes this whipped cream easy to apply while its rich and velvety formulation nourishes your skin.<br>
+            Enriched with nourishing rice milk and a flowery fragrance of cherry blossom.</p>
+        </div>
+    </div>
+
+    <!-- Intro Section -->
+    <div class="intro">
+        <div class="intro-text">
+            <h2>Welcome to Josefina</h2>
+            <p>Experience luxury body care</p>
+        </div>
+    </div>
+
+    <!-- Product Blocks -->
+    <div class="product-blocks">
+        <div class="block">
+            <h2>Josefina Body Care Collection</h2>
+            <p>Discover the exotic sensation of all seasons</p>
+        </div>
+        <div class="block">
+            <h2>Into The Night Body Care</h2>
+            <p>A 100% natural, unique dry oil that nourishes the skin.</p>
+            <p>Price: $8.99</p>
+        </div>
+    </div>
+
+    <!-- Single Products -->
+    <div class="single-products">
+        <div class="product">
+            <img src="images/item1.png" alt="Cherry Blossom Hand Lotion">
+            <h6>THE RITUAL OF SAKURA</h6>
+            <h3>Cherry Blossom Hand Lotion</h3>
+            <p>Body lotion, 8 oz</p>
+            <p>$12.50</p>
+            <a href="#" class="add-to-bag" onclick="openModal('modal1')">ADD TO BAG</a>
+        </div>
+        <div class="product">
+            <img src="images/item2.png" alt="Himalaya Honey Body Cream">
+            <h6>THE RITUAL OF AYURVEDA</h6>
+            <h3>Himalaya Honey Body Cream</h3>
+            <p>Body cream, 8 oz</p>
+            <p>$7.50</p>
+            <a href="#" class="add-to-bag" onclick="openModal('modal2')">ADD TO BAG</a>
+        </div>
+        <div class="product">
+            <img src="images/item3.png" alt="Organic Rice Milk Body Cream">
+            <h6>THE RITUAL OF SAKURA</h6>
+            <h3>Organic Rice Milk Body Cream</h3>
+            <p>Body cream, 8 oz</p>
+            <p>$7.50</p>
+            <a href="#" class="add-to-bag" onclick="openModal('modal3')">ADD TO BAG</a>
+        </div>
+    </div>
+
+    <!-- Modals for Single Products -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">×</span>
+            <h5>IT'S IN THE BAG!</h5>
+            <img src="images/item1.png" alt="Cherry Blossom Hand Lotion">
+            <h4>THE RITUAL OF SAKURA</h4>
+            <h4>Cherry Blossom Hand Lotion</h4>
+            <p>Body lotion, 70 ml</p>
+            <p class="price">$12.50</p>
+            <p class="mix-match">Mix & Match: 3:353</p>
+            <p>Nurture and comfort skin from top to toe with The Ritual of Sakura Body Cream from Rituals.</p>
+            <button onclick="closeModal('modal1')">CONTINUE SHOPPING</button>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">×</span>
+            <h5>IT'S IN THE BAG!</h5>
+            <img src="images/item2.png" alt="Himalaya Honey Body Cream">
+            <h4>THE RITUAL OF AYURVEDA</h4>
+            <h4>Himalaya Honey Body Cream</h4>
+            <p>Body cream, 70 ml</p>
+            <p class="price">$7.50</p>
+            <p class="mix-match">Mix & Match: 3:353</p>
+            <p>Nurture and comfort skin from top to toe with The Ritual of Sakura Body Cream from Rituals.</p>
+            <button onclick="closeModal('modal2')">CONTINUE SHOPPING</button>
+        </div>
+    </div>
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">×</span>
+            <h5>IT'S IN THE BAG!</h5>
+            <img src="images/item3.png" alt="Organic Rice Milk Body Cream">
+            <h4>THE RITUAL OF SAKURA</h4>
+            <h4>Organic Rice Milk Body Cream</h4>
+            <p>Body cream, 70 ml</p>
+            <p class="price">$7.50</p>
+            <p class="mix-match">Mix & Match: 3:353</p>
+            <p>Nurture and comfort skin from top to toe with The Ritual of Sakura Body Cream from Rituals.</p>
+            <button onclick="closeModal('modal3')">CONTINUE SHOPPING</button>
+        </div>
+    </div>
+
+    <!-- Gift Sets -->
+    <div class="gift-sets">
+        <div class="gift-set">
+            <img src="images/gift_set1.png" alt="Rebalancing Ritual Gift Set">
+            <h6>THE RITUAL OF AYURVEDA</h6>
+            <h3>Rebalancing Ritual Gift Set</h3>
+            <p>Foaming shower gel 200 ml, body scrub 125 g, body cream 70 ml, hand soap 300 ml</p>
+            <p>$37.50</p>
+            <a href="#" class="add-to-bag" onclick="openModal('giftModal1')">ADD TO BAG</a>
+        </div>
+        <div class="gift-set">
+            <img src="images/gift_set2.png" alt="Renewing Treat Gift Set">
+            <h6>THE RITUAL OF SAKURA</h6>
+            <h3>Renewing Treat Gift Set</h3>
+            <p>Foaming shower gel 50 ml, body scrub 70 ml, body cream 70 ml, hand soap 110 ml</p>
+            <p>$26.00</p>
+            <a href="#" class="add-to-bag" onclick="openModal('giftModal2')">ADD TO BAG</a>
+        </div>
+        <div class="gift-set">
+            <img src="images/gift_set3.png" alt="Soothing Ritual Gift Set">
+            <h6>THE RITUAL OF KARMA</h6>
+            <h3>Soothing Ritual Gift Set</h3>
+            <p>Foaming shower gel 200 ml, body scrub 125 g, body cream 70 ml, hand soap 300 ml</p>
+            <p>$37.50</p>
+            <a href="#" class="add-to-bag" onclick="openModal('giftModal3')">ADD TO BAG</a>
+        </div>
+    </div>
+
+    <!-- Modals for Gift Sets -->
+    <div id="giftModal1" class="modal">
+        <div class="gift-modal-content">
+            <span class="close" onclick="closeModal('giftModal1')">×</span>
+            <h5>IT'S IN THE BAG!</h5>
+            <img src="images/gift_set1.png" alt="Rebalancing Ritual Gift Set">
+            <h4>THE RITUAL OF AYURVEDA</h4>
+            <h4>Rebalancing Ritual Gift Set</h4>
+            <p>Foaming shower gel 200 ml, body scrub 125 g, body cream 70 ml, hand soap 300 ml</p>
+            <p class="price">$37.50</p>
+            <p>This wonderful gift pack is the perfect present for a friend or family member or for treating yourself! Celebrate each day as a new beginning with these care products based on the fabulous aromas of Cherry Blossom and Rice Milk. Free re-usable luxury storage box.</p>
+            <button onclick="closeModal('giftModal1')">CONTINUE SHOPPING</button>
+        </div>
+    </div>
+    <div id="giftModal2" class="modal">
+        <div class="gift-modal-content">
+            <span class="close" onclick="closeModal('giftModal2')">×</span>
+            <h5>IT'S IN THE BAG!</h5>
+            <img src="images/gift_set2.png" alt="Renewing Treat Gift Set">
+            <h4>THE RITUAL OF SAKURA</h4>
+            <h4>Renewing Treat Gift Set</h4>
+            <p>Foaming shower gel 50 ml, body scrub 70 ml, body cream 70 ml, hand soap 110 ml</p>
+            <p class="price">$26.00</p>
+            <p>This wonderful gift pack is the perfect present for a friend or family member or for treating yourself! Celebrate each day as a new beginning with these care products based on the fabulous aromas of Cherry Blossom and Rice Milk. Free re-usable luxury storage box.</p>
+            <button onclick="closeModal('giftModal2')">CONTINUE SHOPPING</button>
+        </div>
+    </div>
+    <div id="giftModal3" class="modal">
+        <div class="gift-modal-content">
+            <span class="close" onclick="closeModal('giftModal3')">×</span>
+            <h5>IT'S IN THE BAG!</h5>
+            <img src="images/gift_set3.png" alt="Soothing Ritual Gift Set">
+            <h4>THE RITUAL OF KARMA</h4>
+            <h4>Soothing Ritual Gift Set</h4>
+            <p>Foaming shower gel 200 ml, body scrub 125 g, body cream 70 ml, hand soap 300 ml</p>
+            <p class="price">$37.50</p>
+            <p>This wonderful gift pack is the perfect present for a friend or family member or for treating yourself! Celebrate each day as a new beginning with these care products based on the fabulous aromas of Cherry Blossom and Rice Milk. Free re-usable luxury storage box.</p>
+            <button onclick="closeModal('giftModal3')">CONTINUE SHOPPING</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-links">
+            <div>
+                <h4>HELP</h4>
+                <ul>
+                    <li><a href="#">Customer Service</a></li>
+                    <li><a href="#">Live Chat</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>ACCOUNT</h4>
+                <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Order Status</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>SUBSCRIBE</h4>
+                <ul>
+                    <li><a href="#">Emails</a></li>
+                    <li><a href="#">Store Offers and Events</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>THE MEMBER CARD</h4>
+                <ul>
+                    <li><a href="#">Learn More</a></li>
+                    <li><a href="#">Pay My Bill</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-section">
+            <p>CONNECT WITH JOSEFINA BODY CARE COLLECTION</p>
+            <div class="social-icons">
+                <a href="https://facebook.com"><img src="images/icons/facebook.png" alt="Facebook"></a>
+                <a href="https://instagram.com"><img src="images/icons/instagram.png" alt="Instagram"></a>
+                <a href="https://youtube.com"><img src="images/icons/youtube.png" alt="YouTube"></a>
+                <a href="https://pinterest.com"><img src="images/icons/pin.png" alt="Pinterest"></a>
+                <a href="https://twitter.com"><img src="images/icons/twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-note">
+            <p>© 2025 Josefina Body Care Collection by Galy Fils-Aime. All Rights Reserved.</p>
+            <p>NOTE: This webpage is a template to create a sales website. All information and materials used are for ONLY educational purposes.</p>
+        </div>
+    </div>
+
+    <script>
+        // Slideshow
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlides() {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[slideIndex].classList.add('active');
+            slideIndex = (slideIndex + 1) % slides.length;
+        }
+
+        slides[0].classList.add('active');
+        setInterval(showSlides, 3000);
+
+        // Modal Functions
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        window.onclick = function(event) {
+            if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
