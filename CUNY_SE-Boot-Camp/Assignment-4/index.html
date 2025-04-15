@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cityscape with Clock and Text Block</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showPopup() {
+            alert("Button Clicked! This is a pop-up message.");
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="clock">
+            <img src="images/clockimage.png" alt="Clock Face" class="clock-face">
+            <img src="images/hand.png" alt="Hour Hand" class="hour-hand">
+            <img src="images/hand.png" alt="Minute Hand" class="minute-hand">
+        </div>
+        <img src="images/city.jpg" alt="Cityscape" class="background-image">
+        <div class="text-block">
+            <p>This box is at the bottom right corner and the background color to transparent gray</p>
+            <a href="#" class="info-link">Click for more information</a>
+            <button class="click-button" onclick="showPopup()">Click me</button>
+        </div>
+    </div>
+</body>
+</html>
