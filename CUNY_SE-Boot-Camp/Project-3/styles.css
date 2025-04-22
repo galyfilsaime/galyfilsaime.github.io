@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #D8F0FA;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #F5F5DC;
+    border-radius: 20px;
+}
+
+h1 {
+    color: #5A4B3C;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #5A4B3C;
+    margin-top: 0;
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.score-box {
+    background-color: #FFD1DC;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #5A4B3C;
+}
+
+#resetBtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #FFD1DC;
+    color: #5A4B3C;
+    border: none;
+    border-radius: 10px;
+}
+
+#resetBtn:hover {
+    background-color: #FFC1CC;
+}
+
+.game-section {
+    background-color: #D2B48C;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    min-height: 200px;
+}
+
+.character {
+    width: 80px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.input-section {
+    margin: 100px 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#guessInput {
+    padding: 10px;
+    font-size: 1em;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+#checkBtn {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #90EE90;
+    color: #5A4B3C;
+    border: none;
+    border-radius: 10px;
+}
+
+#checkBtn:hover {
+    background-color: #80DE80;
+}
+
+.message {
+    min-height: 40px;
+    font-size: 1.1em;
+    color: #5A4B3C;
+}
+
+.history {
+    text-align: left;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #D8F0FA;
+    border-radius: 10px;
+}
+
+.history h3 {
+    margin: 0 0 10px;
+    color: #5A4B3C;
+}
+
+#historyList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#historyList li {
+    color: #5A4B3C;
+    margin: 5px 0;
+}
+
+.win {
+    background-color: #90EE90 !important;
+}
+
+.lose {
+    background-color: #FFB6C1 !important;
+}
